@@ -1,0 +1,28 @@
+<style>
+
+	div {
+			background-color : red;
+			padding :14px;
+}
+	input:hover{
+			background-color:orange;
+}
+	#mijndiv{
+			border: 2px solid green;
+}
+</style>
+<script>
+	function mijnfunctie(anything){
+		var mijnelement = document.getElementById("mijndiv");
+		mijnelement.innerHTML = anything; 		
+
+}
+</script>
+
+<input type=button onclick=mijnfunctie(1) value="klik hier">
+<input type=button onclick=mijnfunctie(2) value="klik hier">
+<input type=button onclick=mijnfunctie(3) value="klik hier">
+<input type=button onclick=mijnfunctie(33) value="klik hier">
+<input type=button onclick=mijnfunctie(4) value="klik hier">
+
+<div id=mijndiv></div>
